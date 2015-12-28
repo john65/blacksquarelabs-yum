@@ -1,0 +1,7 @@
+name 'blacksquarelabs-yum'
+maintainer 'The Authors'
+maintainer_email 'you@example.com'
+license 'all_rights'
+description 'Installs/Configures blacksquarelabs-yum'
+long_description 'Installs/Configures blacksquarelabs-yum'
+version '0.1.0'
