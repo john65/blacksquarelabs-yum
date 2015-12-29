@@ -1,4 +1,4 @@
 # blacksquarelabs-yum
 
-TODO: Enter the cookbook description here.
+Wrapper cookbook for yum
 

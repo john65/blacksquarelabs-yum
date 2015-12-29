@@ -2,4 +2,11 @@
 # Cookbook Name:: blacksquarelabs-yum
 # Recipe:: default
 #
-# Copyright (c) 2015 The Authors, All Rights Reserved.
+include_recipe 'yum'
+
+yum_repository 'dropbox' do
+  description "Dropbox repo"
+  baseurl "http://linux.dropbox.com/fedora/22/"
+  gpgkey 'https://linux.dropbox.com/fedora/rpm-public-key.asc'
+  action :create
+end
