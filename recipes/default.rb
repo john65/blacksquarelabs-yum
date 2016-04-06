@@ -11,9 +11,9 @@ yum_repository 'dropbox' do
   action :create
 end
 
-yum_repository 'CERT-Forensics-Tools' do
-  description "CERT-Forensics-Tools"
-  baseurl "https://forensics.cert.org/cert-forensics-tools-release-23.rpm"
-  gpgkey 'https://forensics.cert.org/forensics.asc'
+yum_repository 'forensics' do
+  description='CERT Forensics Tools Repository'
+  baseurl="http://www.cert.org/forensics/repository/fedora/cert/$releasever/$basearch"
+  gpgkey='https://forensics.cert.org/forensics.asc'
   action :create
 end
