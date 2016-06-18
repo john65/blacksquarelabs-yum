@@ -10,3 +10,11 @@ yum_repository 'dropbox' do
   gpgkey 'https://linux.dropbox.com/fedora/rpm-public-key.asc'
   action :create
 end
+
+yum_repository 'virtualbox' do
+  description "Virtualbox repo"
+  baseurl "http://download.virtualbox.org/virtualbox/rpm/fedora/$releasever/$basearch"
+  gpgkey 'https://www.virtualbox.org/download/oracle_vbox.asc'
+  repo_gpgcheck true
+  action :create
+end
