@@ -6,7 +6,7 @@ include_recipe 'yum'
 
 yum_repository 'dropbox' do
   description "Dropbox repo"
-  baseurl "http://linux.dropbox.com/fedora/$releasever"
+  baseurl "http://linux.dropbox.com/fedora/25"
   gpgkey 'https://linux.dropbox.com/fedora/rpm-public-key.asc'
   action :create
 end
