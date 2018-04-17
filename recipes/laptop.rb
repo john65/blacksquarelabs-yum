@@ -17,3 +17,10 @@ yum_repository 'virtualbox' do
   gpgkey 'https://www.virtualbox.org/download/oracle_vbox.asc'
   action :create
 end
+
+yum_repository 'microsoft' do
+  description 'packages-microsoft-com-prod'
+  baseurl 'https://packages.microsoft.com/rhel/7/prod/'
+  gpgkey 'https://packages.microsoft.com/keys/microsoft.asc'
+  action :create
+end
