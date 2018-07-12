@@ -24,3 +24,10 @@ yum_repository 'microsoft' do
   gpgkey 'https://packages.microsoft.com/keys/microsoft.asc'
   action :create
 end
+
+yum_repository 'draios' do
+  description 'Draios'
+  baseurl 'http://download.draios.com/stable/rpm/$basearch'
+  gpgkey 'https://s3.amazonaws.com/download.draios.com/DRAIOS-GPG-KEY.public'
+  action :create
+end
